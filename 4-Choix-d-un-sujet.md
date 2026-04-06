@@ -19,9 +19,9 @@ Vous êtes libre de proposer un sujet de votre choix, pensez à m'en parler pour
 
 ## Oral
 
-Chaque groupe devra présenter son projet avec démo, d'une durée total de 15 minutes
+Chaque groupe devra présenter son projet avec démo, d'une durée totale de 15 minutes
 
-Vous présenterez :
+Vous pouvez présenter :
 - L'objectif de votre application
 - Comment fonctionne votre projet
 - La structure des données
