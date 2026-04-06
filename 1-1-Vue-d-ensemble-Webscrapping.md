@@ -32,25 +32,34 @@ Une page web est généralement composée de :
 **JavaScript** : comportement dynamique
 
 
-### Les limites
+### 3. Les limites
 
-Le scraping classique se confronte à des limites bloquantes
+Le scraping classique se confronte à plusieurs limites importantes
 
-- contenu chargé via JavaScript
+- contenu chargé dynamiquement via JavaScript
 - structure HTML instable
 - protection anti-bot
 - captchas
 - blocage IP
 
+Lorsqu’un script de scraping effectue une requête HTTP, il récupère uniquement le contenu HTML renvoyé par le serveur au moment de la réponse.
 
-### Aspects légaux et éthiques
+Or, certains sites web chargent une partie de leur contenu après coup, grâce à JavaScript (par exemple via des requêtes AJAX). Ce contenu est alors généré dans le navigateur, et non dans la réponse initiale du serveur.
 
-À vérifier :
+Par conséquent, ce contenu dynamique est invisible pour un script de scraping classique utilisant des outils comme ``requests``.
+
+Certains outils pro peuvent contourner ces limites, mais ce n'est pas le sujet du cours
+
+### 4. Aspects légaux et éthiques
+
+Avant de mettre en place un script de scraping, il est important de vérifier certains éléments :
+
 - conditions d’utilisation du site
 - fichier robots.txt
-- données publiques vs privées
+- la nature des données (publiques ou privées)
 
-Bonnes pratiques :
+Lors du scraping, il est recommandé de respecter certaines bonnes pratiques :
+
 - ne pas surcharger le serveur
 - ajouter des délais entre requêtes
 - identifier son script (User-Agent)

@@ -1,7 +1,18 @@
 # Les templates avec Jinja2
 
-### 1. Stylisé nos pages
+### Vue d'ensemble
 
+Dans une application Flask, les fichiers statiques comme le CSS, le JavaScript ou les images sont placés dans un dossier appelé static.
+
+Pour appliquer un style à une page, il est nécessaire de créer un fichier CSS dans ce dossier, puis de le lier dans un template HTML.
+
+Flask fournit la fonction url_for qui permet de générer automatiquement le chemin vers un fichier statique. Cela garantit que les ressources seront correctement chargées, quel que soit l’environnement (développement ou production).
+
+Dans une application Flask, les fichiers statiques comme le CSS, le JavaScript ou les images sont placés dans un dossier appelé static.
+
+Une des pratique consiste à inclure les fichiers CSS dans un template de base (avec extends), afin que toutes les pages héritent du même style. Puis si necessaire vous pourrez inclure un fichier spécifique a une page en utilisant des `{% block %}` et en faisant hériter celui du template parent
+
+Cette organisation permet de structurer correctement une application web et de séparer clairement le contenu (HTML) du style (CSS).
 
 ```mermaid
 flowchart LR
@@ -10,6 +21,11 @@ flowchart LR
     C --> D[Navigateur charge le style]
     D --> E[Page stylisée]
 ```
+
+### 2. Stylisé nos pages
+
+
+
 
 ### Dossier static
 
