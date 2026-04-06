@@ -2,11 +2,12 @@
 
 Par groupe de 2 ou 3, vous choisissez un sujet que vous développerez. Vous devrez préparer une présentation ainsi qu'une démo fonctionnelle
 
-## Sujet 1 - 
+## Sujet 1 - Création d’un site affichant les séances de cinéma
 
 Voir le fichier [Sujet1.pdf](./fichiers/Sujet1.pdf)
 
-## Sujet 2 - 
+## Sujet 2 - Création d’un gestionnaire de tâches (Todo List)
+
 Voir le fichier [Sujet2.pdf](./fichiers/Sujet2.pdf)
 
 ## Sujet 3 - Projet de Monitoring
