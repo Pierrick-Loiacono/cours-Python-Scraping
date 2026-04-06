@@ -44,7 +44,7 @@ Le scraping classique se confronte à plusieurs limites importantes
 
 Lorsqu’un script de scraping effectue une requête HTTP, il récupère uniquement le contenu HTML renvoyé par le serveur au moment de la réponse.
 
-Or, certains sites web chargent une partie de leur contenu après coup, grâce à JavaScript (par exemple via des requêtes AJAX). Ce contenu est alors généré dans le navigateur, et non dans la réponse initiale du serveur.
+Or, certains sites web chargent une partie de leur contenu après coup, grâce à JavaScript (par exemple via des requêtes asynchrones). Ce contenu est alors généré dans le navigateur, et non dans la réponse initiale du serveur.
 
 Par conséquent, ce contenu dynamique est invisible pour un script de scraping classique utilisant des outils comme ``requests``.
 

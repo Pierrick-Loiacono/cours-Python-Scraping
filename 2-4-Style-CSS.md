@@ -27,16 +27,16 @@ flowchart LR
 ### Dossier static
 
 **Exemple d'arborescence**
-
+```
 mon_projet/
 │
-├── ``app.py``
-├── ``templates/``
-│   └── ``base.html``
-└── ``static/``
-    └── ``css/``
-        └── ``style.css``
-
+├── app.py
+├── templates/
+│   └── base.html
+└── static/
+    └── css/
+        └── style.css
+```
 ### Lier le CSS dans un template
 
 ```html

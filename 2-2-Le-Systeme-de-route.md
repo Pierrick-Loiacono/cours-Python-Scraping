@@ -59,7 +59,7 @@ def user(name):
 Exemple : 
 
 URL : `http://127.0.0.1:5000/user/pierrick`
-Résultat dans le naviigateur : `Hello pierrick`
+Résultat dans le navigateur : `Hello pierrick`
 
 ### 3. Organiser nos routes
 
@@ -67,14 +67,16 @@ Sans surprise, on va éviter de mettre toutes nos routes dans le fichier sinon c
 
 On va donc se retrouver avec une arborescence similaire à celle-ci
 
-``mon_projet/``
+```
+mon_projet/
 │
-├── ``app.py``
-├── ``routes/``
-│   ├── ``__init__.py``
-│   ├── ``main.py``
-│   ├── ``users.py``
-│   └── ``articles.py``
+├── app.py
+├── routes/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── users.py
+│   └── articles.py
+```
 
 - ``main.py`` contiendra les routes générales
 - ``users.py`` contient les routes liées aux utilisateurs

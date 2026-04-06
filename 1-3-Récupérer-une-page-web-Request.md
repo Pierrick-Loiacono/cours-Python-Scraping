@@ -32,11 +32,11 @@ print(response.text)
 ```
 ### La réponse (response)
 
-L'objet **response** contient toutes les informations que le serveur à renvoyer au "navigateur"
+L'objet **response** contient toutes les informations que le serveur à renvoyé au "navigateur"
 
 #### Code de statut
 
-C'est le retour indiquant si la requête a fonctionné ou si une erreur a été rencontrée. Il y a 4 familles de code retour 
+C'est le retour indiquant si la requête a fonctionnée ou si une erreur a été rencontrée. Il y a 4 familles de code retour 
 - 2xx : Ok
 - 3xx : Redirection (peut être concidéré comme Ok)
 - 4xx : Erreur côté client. **404** quand un contenu n'est pas trouvé
@@ -44,7 +44,7 @@ C'est le retour indiquant si la requête a fonctionné ou si une erreur a été 
 
 #### Contenu HTML
 
-Le contenu HTML c'est l'intégralité de la page récupérer. Pour rappel le **HTML** (HyperText Markup Language) c'est un langage de balisage qui définit la structure d'une page web.
+Le contenu HTML c'est l'intégralité de la page récupérée. Pour rappel le **HTML** (HyperText Markup Language) c'est un langage de balisage qui définit la structure d'une page web.
 ```html
 <!DOCTYPE html>
 <html lang="fr">
@@ -82,9 +82,9 @@ Le User-Agent c'est un header HTTP envoyé avec chaque requête. Il indique au s
 
 Exemple : ``Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36``
 
-Le problème c'est que quan don utilise simplement la bibliothèque **``Request``** le User-Agent a cette tête : ``python-requests/3.x.x`` et certains sites peuvent le bloquer
+Le problème c'est que quand on utilise simplement la bibliothèque **``Request``** le User-Agent a cette tête : ``python-requests/2.x.x`` et certains sites peuvent le bloquer
 
-La solution est toute simple, on peut simuler un autre User-Agent pour éviter le blocage :
+La solution est toute simple même si elle ne règle pas tout, on peut simuler un autre User-Agent pour éviter le blocage :
 
 ```python
 import requests
@@ -99,7 +99,7 @@ response = requests.get(url, headers=headers)
 
 ```
 
-Les serveurs peuvent détecter les bots ou les scripts automatiqués, c'est pour ça qu'ils peuvent :
+Les serveurs peuvent détecter les bots ou les scripts automatisés, c'est pour ça qu'ils peuvent :
 - bloquer la requête
 - renvoyer une page vide
 - renvoyer un contenu différent

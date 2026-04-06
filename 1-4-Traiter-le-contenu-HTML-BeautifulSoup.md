@@ -83,11 +83,8 @@ soup.select(".article")
 ```
 ---
 
-```python
-```
 
-
-### . Exemple complet
+### 5. Exemple complet
 
 ```python
 import requests
