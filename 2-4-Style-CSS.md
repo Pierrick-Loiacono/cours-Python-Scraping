@@ -1,4 +1,4 @@
-# Les templates avec Jinja2
+#  Style CSS
 
 ### Vue d'ensemble
 
@@ -23,9 +23,6 @@ flowchart LR
 ```
 
 ### 2. Stylisé nos pages
-
-
-
 
 ### Dossier static
 

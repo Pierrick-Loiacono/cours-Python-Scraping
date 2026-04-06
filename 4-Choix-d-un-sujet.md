@@ -1,6 +1,6 @@
 # Choix d'un sujet
 
-Par groupe de 2 ou 3, vous choisissez un sujet que vous développerez. Vous devrez préparer une présentation ainsi que d'une démo fonctionnelle
+Par groupe de 2 ou 3, vous choisissez un sujet que vous développerez. Vous devrez préparer une présentation ainsi qu'une démo fonctionnelle
 
 ## Sujet 1 - 
 
