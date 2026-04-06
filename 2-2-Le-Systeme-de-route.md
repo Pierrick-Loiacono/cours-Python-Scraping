@@ -72,7 +72,6 @@ mon_projet/
 │
 ├── app.py
 ├── routes/
-│   ├── __init__.py
 │   ├── main.py
 │   ├── users.py
 │   └── articles.py
