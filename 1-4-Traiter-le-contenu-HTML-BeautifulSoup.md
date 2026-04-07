@@ -45,17 +45,17 @@ print(soup.title.text) # Affichera "Titre de la page"
 
 #### **``find()``** : un seul élément
 
-``find`` permet de récupérer un seulement en fonction de sa balise ou de l'identifiant de celle-ci
+``find`` permet de récupérer un élément en fonction de sa balise ou de l'identifiant de celle-ci
 
 ```python
 titre = soup.find("h1")
 print(titre.text)
 ```
 
-> ! ATTENTION : Si vous faites un **`find`** sur un élément qui n'est pas présent, alors python retournera None, ce qui fera planter le programme si vous tenter d'afficher le texte de celui-ci
+> ! ATTENTION : Si vous faites un **`find`** sur un élément qui n'est pas présent, alors python retournera None, ce qui fera planter le programme si vous tenter d'afficher le texte de celui-ci, pensez donc à conditionner son traitement
 #### **``find_all()``** : plusieurs éléments
 
-``find`` permet de récupérer un seulement en fonction de sa balise ou de l'identifiant de celle-ci
+``find_all`` permet de récupérer une liste d'élement que vous pourrez parcourir dans une boucle
 
 ```python
 paragraphes = soup.find_all("p")

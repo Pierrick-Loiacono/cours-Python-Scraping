@@ -2,7 +2,7 @@
 
 ### 1. Vue d'ensemble
 
-La bibliothèque **Request** perment d'envoyer des requeêtes HTTP depuis Python. Elle simule le comportement d'un navigateur en récupérant le contenu HTML renvoyer par un serveur. Le traitement de ces données sera vu dans le prochain chapitre.
+La bibliothèque **Request** perment d'envoyer des requêtes HTTP depuis Python. Elle simule le comportement d'un navigateur en récupérant le contenu HTML renvoyer par un serveur. Le traitement de ces données sera vu dans le prochain chapitre.
 
 Elle permet donc :
 - d'accéder à une page web
@@ -116,7 +116,19 @@ Les serveurs peuvent détecter les bots ou les scripts automatisés, c'est pour 
 
 Pour faire du scrapping avancé, il vous faudra des outils bien plus spécifique
 
-### 5. Scrap un fichier en local
+### 5. Copier un contenu
+
+Pour éviter de faire trop de requête sur un serveur inutilement, vous pouvez simplement copier son contenu. Pour ça, faites la requête sur l'URL et enregistrer le contenu dan sun fichier
+
+```python
+html = requests.get(url).text
+
+with open("page.html", "w") as f:
+    f.write(html)
+```
+La variable ``contenu`` aura la même tête que ``response.text``
+
+### 6. Scrap un fichier en local
 
 Avec **Request** vous ne pouvez scrapper que des sites (accessible via une URL). Si vous voulez scrapper un fichier en local pour faire des tests ou autre, vous pouvez récupérer le contenu de votre fichier HTML en ouvrant le fichier avec Python.
 
